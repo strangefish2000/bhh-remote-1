@@ -1,5 +1,9 @@
-//! To start with nodemon:   SET DEBUG=helloworld:* | npm run devstart
-// To start: SET DEBUG=helloworld:* | npm start
+//* APP.JS
+//* NODEMON:   SET DEBUG=helloworld:* | npm run devstart
+
+//  To start normally: SET DEBUG=helloworld:* | npm start
+// db = "mongodb://localhost:27017/PWFC2"
+// db.name = PWFC2, db.collection = faqs
 
 var createError = require("http-errors");
 var express = require("express");
@@ -8,9 +12,21 @@ var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 
 var indexRouter = require("./routes/index");
+var faqsRouter = require("./routes/faqs");
 var usersRouter = require("./routes/users");
 
 var app = express();
+
+const mongoose = require("mongoose");
+
+const mongoDB = "mongodb://localhost:27017/PWFC2";
+mongoose.connect(mongoDB, { useNewUrlParser: true });
+const db = mongoose.connection;
+
+db.on("error", console.error.bind(console, "MongoDB connection error:"));
+db.once("open", function() {
+  console.log("connected to: mongodb://localhost:27017/PWFC2");
+});
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
@@ -18,12 +34,13 @@ app.set("view engine", "pug");
 
 app.use(logger("dev"));
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
+app.use("/faqs", faqsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

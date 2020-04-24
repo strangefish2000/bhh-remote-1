@@ -1,0 +1,1311 @@
+/*********** Reset default browser CSS. Based on work by Eric Meyer. ***************/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { background: transparent; border: 0; margin: 0; padding: 0; vertical-align: baseline; }
+body { line-height: 1.625; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+blockquote { quotes: none; }
+blockquote:before, blockquote:after { content: ''; content: none; }
+del { text-decoration: line-through; }
+table {	border-collapse: collapse;	border-spacing: 0; }
+a img {	border: none; }
+
+
+
+/************ General global settings ************/
+h1, h2, h3, h4, h5, h6, p, blockquote, ul, li, ol, dl, fieldset { margin: 4.4%; } 
+
+
+/*
+
+ 0.5em 24px;
+
+*/
+
+li, dd { margin-left: 6%; }
+
+img { border: 0; }
+
+a:link, a:visited { text-decoration:none; color: #000000; font-weight: 300; }
+a:hover, a:focus, a:active { color: #999999; }
+
+/************ The layout stuff ************/
+
+/*CSS USED THROUGHOUT SITE*/
+.clear{
+	clear:both;
+}
+
+
+
+/*remove overflow:hidden to fix dropdown*/
+
+.left-float{
+	width:33%;
+	float:left;
+}
+
+.left-float img{
+	width:100%;
+	height:auto;
+}
+
+
+/*dont think this is needed: 
+.left-images img{
+	width:100%;
+	height:auto;
+}/
+*/
+
+
+.right-float{
+	width:66%;
+	float:right;
+	
+	/*overflow:hidden; has been disabled because the dropdown menu hides behind the page*/
+}
+
+/*
+
+.right-float img{
+	display:none;
+}
+
+*/
+
+/*...........60/40 the other way......*/
+
+.left-float-60{
+	width:66%;
+	float:left;
+}
+
+
+.right-float-40{
+	width:33%;
+	float:right;
+}
+
+.right-float-40 img{
+	width:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*below not right. see repairs page*/
+
+.left-float-40{
+	width:40%;
+	float:left;
+}
+
+.left-float-40 img{
+	width:100%;
+	height:auto;
+}
+
+
+.right-float-60{
+	width:59%;
+	float:right;	
+}
+
+.right-float-60 img{
+	width:47%;
+	height:auto;
+}
+
+
+
+
+
+
+
+
+.leftfloatfull{
+	margin:3px;
+	width:100%;
+	border:red solid 1px;
+	overflow:hidden;
+}
+
+
+
+.floatcontainer{
+	margin-left:24px;
+}
+
+.box{
+	float:left;
+	overflow:hidden;
+	width:24%;
+	text-align:center;
+}
+
+.box p {
+	margin:1%;
+	margin-bottom:24px;
+}
+
+.box img {	
+	width:94%;
+}
+
+
+
+
+
+
+.box3{
+	float:left;
+	overflow:hidden;
+	width:33%;
+	text-align:center;
+}
+
+.box3 p {
+	margin:1%;
+	margin-bottom:24px;
+}
+
+.box3 img {	
+	width:94%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.image-line {
+	text-align:left;
+}
+
+.image-line img  {
+	margin:2px;
+	width:31.4%;
+}
+
+
+
+
+
+/*SITE STRUCTURE*/
+
+
+
+
+body {
+	margin: 0;
+	text-align: center;
+	font-family: 'Nunito', sans-serif;
+	font-size: 112.5%;
+	color: #33475b;
+	background-color:#45484B;
+	border-radius:3px;
+	
+	line-height: 1.625;
+	font-weight: 800;
+}
+
+/*
+CHANGED 18 nov 18	background-color:#45484B;
+
+#33475B
+
+
+*/
+
+
+
+
+
+#container {
+	text-align: center;
+	width: 100%;
+	max-width: 1000px;
+	background-color: #ffffff;
+	line-height: 1.45;
+	font-weight: 400;
+	font-size: 100%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-radius: 3px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+
+/*removed from #container
+font-size: 2.5vmin;
+*/
+
+
+
+
+
+/*HEADER*/
+
+#header {
+}
+
+.pwfclogo{
+	margin:10% 3% 6.8% 15%;
+}
+
+.menu{
+	font-size:96%;
+	line-height:1;
+	margin:5% 6% 0% 6%;
+}
+
+
+#telephone{
+	text-align:right;
+	margin:1% 6.5% 0% 6.5%;
+}
+
+#telephone img{
+	width:70%;
+}
+
+/*css from dropdown menu*/
+.nav li {
+	margin:0px;
+	padding:0px;
+}
+
+.nav {
+	text-align:right;
+    padding:0;
+	margin:0px;
+}
+
+.nav li {
+    margin:0% 0.7%;
+	display:inline-block;
+    position:relative;
+    list-style:none;
+	
+}
+
+/*taken out of above
+font-size:110%;
+*/
+
+
+.nav a {
+    text-decoration:none;
+    display:block;
+    padding:0px 0px;
+}
+
+
+/* sublevels */
+.nav ul li:hover a, .nav li:hover li a {
+    background:none;
+    border:none;
+}
+.nav ul li a:hover {
+    color:#999999;
+}
+
+
+/* drop down */
+.nav li:hover > ul {
+    opacity:1.0;
+    visibility:visible;
+}
+
+
+/*~nav ul is the width problem
+
+a
+a
+a
+a
+
+a
+a
+a
+a
+a
+a
+a
+a
+a
+aa
+*/
+
+
+
+
+.nav ul {
+    opacity:0;
+    visibility:hidden;
+    padding:8px;
+    width:250px;
+    position:absolute;
+    background:#fff;
+    border:5px solid #9D9D9D;
+
+/*this is the shadow on the dropdown - KEEP...some css3*/
+
+
+    -moz-transition:opacity .250s linear, visibility .1s linear .1s;
+    -webkit-transition:opacity .25s linear, visibility .1s linear .1s;
+    -o-transition:opacity .25s linear, visibility .1s linear .1s;
+    transition:opacity .25s linear, visibility .1s linear .1s;
+}
+.nav ul li {
+	text-align:center;
+	display:block;
+	padding-bottom:2px;
+}
+/*TITLEBAR*/
+
+#titlebar{;
+	overflow:hidden;
+	color:#afb2b3;
+	background-color:rgba(0, 0, 0, 0.8);
+	font-size:95%;
+}
+
+.titlebar-name{
+	float:left;
+	text-align:left;
+	margin:0.8% 1% 0.8% 4%;
+}
+
+.titlebar-name h2{
+	text-align:left;
+
+}
+
+#titlebar-quote{
+	text-align:right;
+	color:#ca2011;
+	border:red solid 1px;
+	border-radius:3px;
+	line-height:1.4;
+	padding:0% 1% 0% 1%;
+	margin:1% 4.3% 1% 1%;
+	float:right;
+}
+
+#titlebar-quote h2{
+
+	margin:0%;
+}
+
+#titlebar-quote a{
+	color:red;
+}
+
+#titlebar-quote a:hover, a:focus, a:active{
+	color:#0442cc;
+}
+
+/*MAIN CONTENT*/
+
+#main-content{
+	margin:auto;
+	width:96%;
+	margin-top:20px;
+	margin-bottom:20px;
+	text-align:left;
+
+	overflow:hidden;/*added for services page - does it affect other pages???*/
+}
+
+/*#main-content h2 {
+	text-align:center;
+}*/
+
+/*I GOT RID OF ID (BELOW) FROM #MAIN-CONTENT BECAUSE IT EFFECTS TOO MUCH CODE. WILL BE PROBLEMS YET TO FIX FROM THIS!!!!!!
+
+#main-content h3, li{
+	padding-top:18px;
+}*/
+
+
+
+
+#main-content img{
+	border: 1px solid #9d9d9d;
+	padding: 4px;
+	border-radius: 3px;
+}
+
+/*******HOME******/
+#home-img{
+	text-align:center;
+}
+
+#home-img img{
+	width:96%;
+}
+
+/******ABOUT******/
+
+/******SERVICES******/
+
+
+.services{
+	border: 1px solid #9D9D9D;
+	border-radius:3px;
+	float:left;
+	overflow:hidden;
+	width:32.0%;
+	text-align:center;
+	padding:0px;
+	padding-bottom:8px;
+	margin:3.9px;
+}
+
+
+
+.servicesimg{
+	width:86%;
+}
+
+.services p{
+	font-size:90%;
+}
+
+
+
+
+/******CONTACT******/
+#contact-content {
+	text-align:center;
+	margin:20px 0px;
+}
+
+.contact-float-right{
+	padding-top:40px;
+	margin-bottom:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+.contact-float-right h1, h4{
+	padding:0.5%;
+	margin:0.5%;
+}
+
+.contact-float-right p{
+	margin:20px;
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+#address1{
+	padding:0.5%;
+	margin:0.5%;
+}
+
+#address2{
+	padding:0.5%;
+	margin:0.5%;
+}
+
+
+
+#pwfc{
+	font-size:150%;
+	padding:0px;
+	margin:0px;
+	line-height:1;
+}
+
+#space1{
+	height:10px;
+}
+
+.to-view{
+}
+
+
+/*
+#s-tm{	padding:0px;
+	margin-top:10px;
+}
+*/
+
+#landline{
+	padding:0px;
+	margin-top:25px;
+	margin-bottom:5px;
+}
+
+#mobile{
+	padding:0px;
+	margin-top:0px;
+}
+
+
+
+
+
+#s-ff{
+	padding:0px;
+	margin:25px 0px 25px 0px;
+	text-decoration:underline;
+	
+	text-decoration-color: #ca2011;
+	-moz-text-decoration-color: #ca2011; /* Code for Firefox */  
+}
+
+#s-ff a:link{
+	font-weight:600;
+}
+
+.link2 a{
+	color:#ca2011;
+}
+
+.link2 a:hover{
+	color:#afb2b3;	
+}
+
+
+#p1{
+	margin:0px;
+	padding:0px;
+}
+
+#p2{
+	margin:0px;
+	padding:0px;
+}
+
+
+
+
+
+
+
+.s-img{
+	padding:0px;
+	margin-top:8px;
+}
+
+
+
+
+
+/*
+.contact-cat p {
+	margin:0px;
+	padding:0px;
+}
+*/
+
+
+
+
+
+
+
+
+.link a{
+
+	color:#0442cc;	
+}
+
+.link a:hover{
+	color:#afb2b3;	
+}
+
+
+.contact-cat{
+	padding:20px;
+}
+
+
+.contact-para{
+	text-align:left;
+}
+
+
+
+
+
+
+/*
+
+
+.contact-para p, h3{
+	margin-left:1.2%;
+	margin-right:1.2%;
+}
+
+
+*/
+
+
+
+
+
+
+.map{
+	margin-left:auto;
+	margin-right:auto;
+	width:100%;
+}
+
+.map img{
+	width:100%;
+}
+
+
+
+
+
+
+.map p{
+	margin-right:6.0%;
+}
+
+
+
+
+
+
+
+/******TESTIMONIALS******/
+
+.testimonial-monitoring-reports{
+	background-color:#F8FDFF;
+	border-top: 1px solid #D0F1FF;
+	border-bottom: 1px solid #D0F1FF;
+	color:#173D8E;
+	height:20px;
+	line-height:20px;
+	margin: 0px 4% 12px 4%;
+	font-weight:600;
+}
+
+
+
+.testimonial-table {
+	border-bottom: 1px solid #D0F1FF;
+}
+
+.testimonial-table h3 {
+	margin:0px;
+	color:#DC031E;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:400;
+	font-size:16px;
+	margin:0px 6% 8px 6%;
+}
+
+.score1{
+	color:#DC031E;
+	font-weight:bold;
+	font-size:120%;
+}
+.score2 p {
+	background-color:#CEF0FF;
+	text-align: center;
+	margin:0px 1px;
+}
+
+
+
+.testimonial-text {
+	color:black;
+}
+
+.testimonial-location{
+	color:#173D8E;
+	padding-bottom:20px;
+}
+
+
+/*FOOTER*/
+
+#footer{
+	overflow:hidden;
+	background-color:rgba(0, 0, 0, 0.8);
+	border-bottom-left-radius:3px;
+	border-bottom-right-radius:3px;
+	padding-bottom:20px;
+	color:#afb2b3;
+}
+
+.footer-line{
+	margin:20px 1.8% 20px 1.8%;
+}
+
+#footer li{
+	list-style:none;
+	margin:0px;
+	padding-top:0px;
+}
+
+#footer a{
+	color:#afb2b3;
+	padding:0px 4% 0px 4%;
+	font-size:80%;
+}
+
+#footer a:hover, a:focus, a:active{
+	color:#0442cc;
+}
+
+#footer-top {
+	margin-top:15px;
+}
+
+#footer-top a{
+	margin-top:15px;
+	font-size:100%;
+}
+
+#footer-center div{
+	float:left;
+	display:inline-block;
+	text-align:left;
+}
+
+#footer-main-menu{
+	margin:0px 0% 0px 8%;
+	width:100px;
+}
+
+#footer-services{;
+	margin:0px 0% 0px 8%;
+	width:150px;
+}
+
+#footer-right-float{
+	text-align:right;
+	margin-right:8%;
+	font-size:95%;
+}
+
+#footer-right-float p {
+	margin-top:8px;
+	font-size:93%;
+}
+
+#footer-right-float a {
+	padding:0px;
+	font-size:105%;
+}
+
+#footer-quote{
+	border:#afb2b3 solid 1px;
+	float:right;
+	border-radius:3px;
+	padding:2px;
+	font-size:160%;
+	margin-top:18px;
+}
+
+#footer-bottom a{
+	font-size:80%;
+	padding:0px;
+}
+
+#footer-bottom p{
+	padding-bottom:5px;
+}
+
+/*BELOW ARE INDIVIDUAL SERVICES*/
+
+/*RESURFACING HARDWOOD FLOORING*/
+
+#hardwoodtop  {
+	margin: 0.5em 24px;
+}
+
+#hardwoodtop img {
+	margin-right:1%;
+	width:29%;
+}
+
+.hwftop{
+	overflow:hidden;
+	margin-bottom:20px;
+}
+
+/*RESTORING PARQUET*/
+
+.left-float-50{
+	width:49%;
+	float:left;
+}
+
+.left-float-50 img {
+	width: 45%;
+}
+
+.right-float-50{
+	width:49%;
+	float:right;
+}
+
+.parquet-bottom img {
+	width:30%;
+	height:auto;
+}
+
+
+/*REPAIRS*/
+
+
+.grad1 {
+    height: 1px;
+  background: #9d9d9d; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(-90deg, white, #9d9d9d, white); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-90deg, white, #9d9d9d, white); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-90deg, white, #9d9d9d, white); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-90deg, white, black, white); /* Standard syntax *//
+}
+
+
+/*GAP FILLING*/
+
+
+.twopicfull{
+
+	text-align:center;
+}
+
+.twopicfull img {
+	width:48%;
+}
+
+
+/*stairs*/
+
+.threepicfullcontainer{
+	margin: 24px;
+}
+
+.threepicfull{
+	text-align:center;
+}
+
+.threepicfull div {
+	display:inline-block;
+	width:32.75%;
+	margin:0px;
+}
+
+.threepicfull p {
+	margin:0px;
+	text-align:center;
+}
+
+.threepicfull img {
+	width:96%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fourpicleft{
+	float:left;
+	width:50%;
+	overflow:hidden;
+	margin:24px;
+}
+
+.fourpicleft img{
+	margin:1px;
+	float:left;
+	width:47%;
+}
+
+
+/*VARNISH & OIL*/
+
+.onepicleft{
+	float:left;
+	overflow:hidden;
+}
+
+.onepicleft img{
+	float:left;
+	width:47%;
+	margin:24px 24px 24px 0px;
+}
+
+
+
+/*MEDIA QUERIES*/
+
+
+/*MEDIA BREAK AT WIDTH 480px*/
+
+@media screen and (max-width: 480px) {
+
+#container{
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+
+#topblack480 h2{
+	background-color:rgba(0, 0, 0, 0.8);
+	padding:1.1% 0%;
+	margin:0px;
+	font-size:120%;
+}
+
+
+
+#titlebar h2{
+	font-size:120%;
+}
+
+
+.header480{
+	text-align:left;
+	float:none;
+	width:100%;
+
+}
+
+
+
+.tel480{
+
+	float:none;
+	width:100%;
+	margin-bottom:2%;
+}
+
+
+
+#telephone{
+}
+
+#telephone img{
+		margin:0px;
+	padding:0px;
+	text-align:center;
+	width:100%;
+}
+
+tel480 p{
+	margin:0px;
+	padding:0px;
+}
+
+
+
+.pwfclogo{
+	text-align:center;
+	margin:9% 5% 2% 5%;
+}
+
+
+
+
+
+.nav li{
+	padding-bottom:2%;
+}
+
+.services480{
+	display:none;
+}
+
+/*BELOW ARE INDIVIDUAL LEVEL1 PAGES*/
+
+/*about, faqs, testimonials */
+
+.left480{
+	float:none;
+	width:100%;
+}
+
+.left480 img{
+	text-align:center;
+	display:none;
+
+}
+
+.right480{
+	float:none;
+		width:100%;		
+}
+
+.right480 img{
+	text-align:center;
+	width:88%;
+          display: block;
+		  margin-left: auto;
+          margin-right: auto;
+}
+
+/*contact*/
+
+
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 481px) {
+	
+	#topblack480 h2{
+		display:none;
+	}
+	
+	.img480{
+		display:none;
+	}
+	
+
+}
+
+
+
+
+
+/*MEDIA BREAK AT WIDTH 900px*/
+
+@media screen and (max-width: 900px) {
+	#telephone{
+		text-align:center;
+
+	}
+	
+	#telephone img{
+		width:80%;
+		margin-top:2%;
+		margin-bottom:2%;
+	}
+	
+	.nav{
+		text-align:center;
+	}
+
+
+	#pwfclogo480 img{
+	border:green;
+}
+
+.pwfclogo{
+	margin-top:15%;
+}
+
+.services{
+	width:48%;
+}
+
+}
+
+@media screen and (max-width: 530px) {
+.services{
+	width:98%;
+}
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 820px) {
+	
+/*	
+.contact-float-right h1, h4, p{
+	font-size:80%;
+}
+*/
+
+.contact-float-right{
+	padding-top:5px;	
+}
+
+#pwfc{
+	margin-top:0px;
+	padding-top:0px;
+}
+
+#address1{
+	font-size:80%;
+}
+
+#address2{
+	font-size:80%;
+}
+
+#pwfc{
+	font-size:90%;
+}
+
+#landline{
+	font-size:80%;
+}
+#mobile{
+	font-size:80%;
+}
+
+#s-ff{
+	font-size:80%;
+}
+
+#p1{
+	font-size:80%;
+}
+
+#p2{
+	font-size:80%;
+}
+
+.to-view{
+	font-size:80%
+}
+}
+
+@media screen and (max-width: 680px) {
+.to-view{
+	font-size:70%
+}
+}
+
+
+@media screen and (max-width: 600px) {
+	
+/*
+.contact-float-right h1, h4, p{
+	font-size:70%;
+}
+
+.contact-float-right{
+	padding-top:0px;
+}
+*/
+
+
+
+#pwfc{
+	font-size:80%;
+}
+
+
+
+
+
+#s-ff{
+	font-size:80%;
+}
+
+.to-view{
+	font-size:60%
+}
+
+}
+
+
+
+@media screen and (min-width: 901px) {
+	.br480{
+		display:none;	
+	}
+	#topblack480 h2{
+	display:none;
+	}
+	
+
+}

@@ -1,7 +1,145 @@
 doctype html
-html
+html(lang='en')
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title PWFC in Express/Pug
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans', rel='stylesheet', type='text/css')
+    link(href='stylesheets/main.css', rel='stylesheet', media='all')
   body
-    block content
+    #container
+      #topblack480
+        h2(style='color:rgba(0, 0, 0, 0.8;') A
+      #header
+        .left-float.header480
+          .pwfclogo
+            a(href='/')
+              img(src='assets/pwfclogo.gif', alt='logo', title='logo')
+        .right-float.tel480
+          .menu.menu480
+            ul.nav
+              li
+                a(href='/') Home
+              li
+                a(href='/about') About
+              li
+                a(href='/services') Services
+              li
+                a(href='/gallery') Gallery
+              br.br480
+              li
+                a(href='/faqs') Faq's
+              li
+                a(href='/quote') Quote
+              li
+                a(href='/testimonials') Testimonials
+              li
+                a(href='/contact') Contact
+          p#telephone
+            a(href='http://www.checkatrade.com/thepolishedwoodfloorcompany/')
+              img(src='assets/telephone.gif', alt='Tel Number', title='Tel Number')
+        .clear
+        #titlebar
+          .titlebar-name
+            h2 Quote
+          #titlebar-quote
+            h2
+              a(href='/quote') Quick email quote
+        .clear
+
+            block content    
+
+        .clear
+        #footer
+          #footer-top
+            a(href='/sandingtraditionalboards') Sanding traditional boards
+            a(href='/resurfacinghardwoodflooring') Resurfacing hardwood flooring
+            a(href='/restoringparquet') Restoring parquet
+          .clear
+          hr.footer-line
+          #footer-center
+            #footer-main-menu
+              ul
+                li
+                  a(href='/') Home
+                li
+                  a(href='/about') About
+                li
+                  a(href='/services') Services
+                li
+                  a(href='/gallery') Gallery
+                li
+                  a(href='/faqs') FAQ's
+                li
+                  a(href='/quote') Quote
+                li
+                  a(href='/testimonials') Testimonials
+                li
+                  a(href='/contact') Contact
+            #footer-services
+              ul
+                li
+                  a(href='/sandingtraditionalboards') Floor sanding
+                li
+                  a(href='/repairsandrenovations') Repairs
+                li
+                  a(href='/gapfilling') Gap filling
+                li
+                  a(href='/hearthremoval') Hearth removal
+                li
+                  a(href='/stairs') Stairs
+                li
+                  a(href='/staining') Staining
+                li
+                  a(href='/varnishandoil') Varnish or Oil
+                li
+                  a(href='/draughtproofing') Draught-proofing
+          #footer-right-float
+            h3 The Polished Wood Floor Company
+            p 01273 608303
+            p 07811 671354
+            p
+              a(href='mailto:paul@thepolishedwoodfloorcompany.co.uk?Subject=Hello%20again', target='_top') paul@thepolishedwoodfloorcompany.co.uk
+            p
+              a(href='http://www.checkatrade.com/thepolishedwoodfloorcompany/') www.checkatrade.com/thepolishedwoodfloorcompany
+            h1#footer-quote
+              a(href='/quote') Quick Quote
+          .clear
+          hr.footer-line
+          #footer-bottom
+            p
+              a(href='/contact') Brighton
+              a(href='/contact') Hove
+              a(href='/contact') Poets Corner
+              a(href='/contact') Hove Park
+              a(href='/contact') Seven Dials
+              a(href='/contact') Queens Park
+              a(href='/contact') Hanover
+              a(href='/contact') Elm Grove
+              a(href='/contact') Lewes Road
+              a(href='/contact') Preston Park
+              a(href='/contact') Fiveways
+              a(href='/contact') Varndean
+              br
+              a(href='/contact') Withdean
+              a(href='/contact') Westdene
+              a(href='/contact') Hollingdean
+              a(href='/contact') Portslade
+              a(href='/contact') Southwick
+              a(href='/contact') Shoreham
+              a(href='/contact') Kemp Town
+              a(href='/contact') Ovingdean
+              a(href='/contact') Rottingdean
+              a(href='/contact') Saltdean
+              a(href='/contact') Peacehaven
+              a(href='/contact') Lewis
+              a(href='/contact') East Sussex
+            p
+              a(href='/contact') BN43
+              a(href='/contact') BN42
+              a(href='/contact') BN41
+              a(href='/contact') BN3
+              a(href='/contact') BN1
+              a(href='/contact') BN2
+              a(href='/contact') BN10
+              a(href='/contact') BN7
